@@ -1,0 +1,43 @@
+<html ng-app="myCalculatorModule">
+<head>
+  <script src="script/angular.js" type="text/javascript"></script>
+  <script src="script/calculatorApp.js" type="text/javascript"></script>
+</head>
+<body>
+  <h3> The Calculator Application</h3>
+  <div ng-controller="myCalculatorCtrl">
+    <p><font color="red">{{error}}</font></p>
+      <p>
+          <span>
+              <input type="text" ng-model="input1" ng-change="clearError()">
+              </input>
+          </span>
+          <span>{{showSign}}
+          </span>
+          <span>
+              <input type="text" ng-model="input2" ng-change="clearError()">
+              </input>
+          </span>
+          <span>
+              <button ng-click="calculate()">=</button>
+          </span>
+          <span>{{result}}
+          </span>
+      </p>
+      <p>
+        <span>
+          <button ng-click="add()">+</button>
+       </span>
+       <span>
+         <button ng-click="minus()">-</button>
+       </span>
+      <span>
+        <button ng-click="divide()">/</button>
+      </span>
+      <span>
+        <button ng-click="multiply()">*</button>
+      </span>
+     </p>
+    </div>
+</body>
+</html>
