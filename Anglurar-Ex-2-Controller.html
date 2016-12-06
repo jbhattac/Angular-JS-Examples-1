@@ -1,0 +1,15 @@
+<html ng-app="myModule">
+<head>
+  <script src="script/angular.js" type="text/javascript"></script>
+  <script src="script/app.js" type="text/javascript"></script>
+</head>
+<body>
+  <h3> The page is loaded</h3>
+  <div ng-controller="myAngularCtrl">
+      <p >Enter your Name : <input type="text" ng-model="userName"></input></p>
+      <p>{{userName}}</p>
+      <p> The hour of the day::{{datetime}}
+      <p><button ng-click="updatetime()">Update</button> </p>
+  </div>
+</body>
+</html>
